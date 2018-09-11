@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <h1>Train Time!</h1>
+
+    <div class="card">
+        <h4 class="card-header">Current Train Schedule</h4>
+        <table class="table table-striped table-bordered card-body">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Flying Pussyfoot</td>
+                    <td>New York</td>
+                    <td>45</td>
+                    <td>1:00</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h4 class="card-header">Add Train</h4>
+        <form>
+            <div class="form-group">
+                <label for="inputTrainName">Train Name</label>
+                <input type="text" class="form-control" id="inputTrainName" placeholder="Enter train name.">
+            </div>
+            <div class="form-group">
+                <label for="inputDestination">Destination</label>
+                <input type="text" class="form-control" id="inputDestination" placeholder="Enter destination.">
+            </div>
+            <div class="form-group">
+                <label for="inputFirstTime">First Train Time</label>
+                <input type="text" class="form-control" id="inputFirstTime" placeholder="HH:mm - military time.">
+            </div>
+            <div class="form-group">
+                <label for="inputFrequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="inputFrequency" placeholder="Enter frequency.">
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
