@@ -12,9 +12,12 @@
 </head>
 
 <body>
-    <script src="assets/javascript/script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="assets/javascript/script.js"></script>
 
     <h1>Train Time!</h1>
 
@@ -30,14 +33,7 @@
                     <th scope="col">Minutes Away</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td scope="row">Flying Pussyfoot</td>
-                    <td>New York</td>
-                    <td>45</td>
-                    <td>1:00</td>
-                    <td>15</td>
-                </tr>
+            <tbody id="trainTable">
             </tbody>
         </table>
     </div>
@@ -61,7 +57,7 @@
                 <label for="inputFrequency">Frequency (min)</label>
                 <input type="text" class="form-control" id="inputFrequency" placeholder="Enter frequency.">
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button id="addTrain" class="btn btn-primary">Submit</button>
         </form>
     </div>
 
